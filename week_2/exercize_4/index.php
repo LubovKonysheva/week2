@@ -52,9 +52,12 @@ require "../exercize_4/src/TariffBasic.php";
 require "../exercize_4/src/ServiceGPS.php";
 require "../exercize_4/src/ServiceDriver.php";
 require "../exercize_4/src/TariffHour.php";
+require "../exercize_4/src/TarriffStudent.php";
 
 /** @var TariffInterface $tariff */
-$tariff = new TariffHour(5, 61);
+$tariff = new TariffHour(5, 16);
+//$tariff = new TariffBasic(5, 60);
+//$tariff = new TariffStudent(7, 8);
 //$tariff->addService(new ServiceGPS(15));
 //$tariff->addService(new ServiceDriver(100));
 echo $tariff->countPrice();
